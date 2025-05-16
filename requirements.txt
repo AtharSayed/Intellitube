@@ -1,0 +1,8 @@
+gradio
+yt-dlp
+openai-whisper
+torch
+langchain-community
+sentence-transformers
+ollama
+chromadb
