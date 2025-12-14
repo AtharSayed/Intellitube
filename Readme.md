@@ -83,28 +83,28 @@ git clone https://github.com/AtharSayed/Intellitube.git
 cd Intellitube
 ```
 
-# Create environment
+### 2. Create environment
 ```bash
 python -m venv venv
 source venv/bin/activate # Windows: venv\Scripts\activate
 ```
 
-# Install dependencies
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-# Start authentication service
+### 4. Start authentication service
 ```bash
 python auth_app.py
 ```
 
-# Start IntelliTube UI
+### 5. Start IntelliTube UI
 ```bash
 python app.py
 ```
 
-# (Optional) Start analytics dashboard
+### 6. (Optional) Start analytics dashboard
 ```bash
 streamlit run dashboard/dash.py
 ```
