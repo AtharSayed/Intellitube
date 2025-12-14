@@ -1,9 +1,8 @@
 # 🎥 Intellitube (Youtube Video Analyzer)
 
-This project features a **sleek and modern web interface** for **transcribing, summarizing, and analyzing YouTube videos**, all **locally and efficiently**, using:
+IntelliTube is a full‑stack, privacy‑first AI system that converts YouTube videos into actionable knowledge. It combines speech‑to‑text, transcript correction, summarization, retrieval‑augmented question answering (RAG), and large‑scale comment sentiment & intent analytics with both Gradio and Streamlit dashboards.
 
-- 🧠 **Faster Whisper** for fast, accurate transcription
-- 🤖 **Mistral 7B quantized model via Ollama** for efficient local summarization and Q&A
+The entire AI pipeline runs locally using open‑source models (**Faster‑Whisper**, **Mistral**, **HuggingFace Transformers**), making IntelliTube suitable for research, education, and enterprise use cases where data privacy matters.
 
 ---
 
@@ -26,14 +25,29 @@ Give it any YouTube URL, and it will:
 
 ## ✨ Features
 
--   ⚡ **Fast and local**: Runs without cloud APIs.
--   🔐 **Privacy-first**: All processing happens on your machine.
--   🧠 **Mistral + Ollama** for efficient LLM inference.
--   💻 **Elegant Web UI**: A custom-built, responsive web interface (HTML, CSS, JavaScript, Bootstrap 5) for a superior user experience, including secure authentication.
--   **User Authentication**: Robust Login and Sign-up pages for secure access and personalized interactions.
--   🧠 **Multimodal Intelligence**: Combines Faster-Whisper for transcription and Deep-Translation for multilingual support for sentiment analysis.
--   📦 Modular architecture for easy integration or expansion.
+-   🎙️ High‑speed YouTube transcription using Faster‑Whisper
+-   ✍️ AI‑based transcript correction for grammar & readability
+-   📝 Automatic long‑video summarization using local LLMs
+-   ❓ Ask questions over videos (RAG‑based QA)
+-   💬 Scrape YouTube comments at scale
+-   😊 Deep sentiment analysis (Positive / Neutral / Negative)
+-   🎯 Intent & emotion classification (Praise, Complaint, Concern, etc.)
+-   📊 Advanced interactive analytics dashboard (Streamlit + Plotly)
+-   📄 Export results as JSON / PDF / CSV
+-   🔐 User authentication system (Flask + MongoDB)
 
+---
+
+## 🧠 System Architecture (Pipeline Overview)
+-   User submits a YouTube URL
+-   Audio is downloaded via yt‑dlp
+-   Faster‑Whisper transcribes the audio
+-   Transcript is cleaned using a local LLM correction layer
+-   Clean transcript is **summarized & ** indexed into a FAISS vector store **
+-   Users ask questions → RAG pipeline retrieves relevant chunks → Mistral LLM answers
+-   Comments are scraped, translated (if needed), and analyzed for **sentiment (RoBERTa)** & **intent/emotion (DistilBERT)**
+-   Results are visualized via Streamlit analytics dashboard
+    
 ---
 
 ## 📁 Project structure
