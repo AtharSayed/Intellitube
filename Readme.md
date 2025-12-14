@@ -78,7 +78,33 @@ Beyond the powerful backend, IntelliTube now boasts a custom-built, responsive, 
 ## 🚀 Getting Started
 
 ### 1. Clone the Main Repo
-
 ```bash
-git clone https://github.com/AtharSayed/CodeLLM.git
-cd CodeLLM/Intellitube
+git clone https://github.com/AtharSayed/Intellitube.git
+cd Intellitube
+```
+
+# Create environment
+```bash
+python -m venv venv
+source venv/bin/activate # Windows: venv\Scripts\activate
+```
+
+# Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+# Start authentication service
+```bash
+python auth_app.py
+```
+
+# Start IntelliTube UI
+```bash
+python app.py
+```
+
+# (Optional) Start analytics dashboard
+```bash
+streamlit run dashboard/dash.py
+```
