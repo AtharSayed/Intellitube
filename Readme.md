@@ -1,4 +1,4 @@
-# 🎥 Intellitube (Youtube Video Analyzer)
+# 🎥 Intellitube 
 
 IntelliTube is a full‑stack, privacy‑first AI system that converts YouTube videos into actionable knowledge. It combines speech‑to‑text, transcript correction, summarization, retrieval‑augmented question answering (RAG), and large‑scale comment sentiment & intent analytics with both Gradio and Streamlit dashboards.
 
