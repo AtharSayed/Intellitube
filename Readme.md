@@ -31,6 +31,21 @@ The entire AI pipeline runs locally using open‑source models (**Faster‑Whisp
 -   Results are visualized via Streamlit analytics dashboard
     
 ---
+---
+## 🧠 System Design Architecture
+
+The following diagram illustrates the end-to-end architecture of **IntelliTube**, showing how user requests flow through transcription, LLM processing, analytics, and visualization layers.
+
+![IntelliTube System Design](static/images/Intellitube-System_Diagram.png)
+
+---
+## 🔐 Authentication Module
+
+IntelliTube includes a secure authentication system built using **Flask and MongoDB**, allowing users to sign up and log in before accessing analysis features.
+
+![IntelliTube Authentication Page](static/images/Intellitube-Auth_Page.png)
+
+---
 
 ## 📁 Project structure
 
