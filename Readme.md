@@ -47,6 +47,15 @@ IntelliTube includes a secure authentication system built using **Flask and Mong
 
 ---
 
+## 🎛️ Main Application
+
+The main Application Intellitube running on **Gradio Interface** 
+
+![IntelliTube Gradio Application](static/images/Intellitube-Main-app.png)
+
+---
+
+
 ## 📁 Project structure
 
 ```bash
