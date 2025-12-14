@@ -4,24 +4,6 @@ IntelliTube is a full‑stack, privacy‑first AI system that converts YouTube v
 
 The entire AI pipeline runs locally using open‑source models (**Faster‑Whisper**, **Mistral**, **HuggingFace Transformers**), making IntelliTube suitable for research, education, and enterprise use cases where data privacy matters.
 
----
-
-## 🔍 What It Does
-
-Give it any YouTube URL, and it will:
-
-1.  Extract and transcribe the video audio using `fast_transcriber` (Faster Whisper).
-2.  Summarize the transcription using `summarizer` powered by Mistral running locally via Ollama.
-3.  Answers any question related to the video content by using local powered LLM.
-4.  Scrapes Youtube Comment, translate non English comments to English, and performs sentiment analysis.
-5.  Breaks down positive, neutral, and negative audience reactions for deep, real-time insight.
-6.  Provides a secure and intuitive **login and sign-up experience** for user management.
-7.  Displays all analysis results within a beautiful, clean, and concise **custom web interface**.
-8.  Provide a proper report with timestamp for download and document purpose of the entire process
-9.  Transcript correction using local Mistral via Ollama to fix transcription errors.
-10. Integrated a sentiment analysis dashboard using Streamlit with 10+ visuals and detailed insights from comments.
-
----
 
 ## ✨ Features
 
@@ -43,7 +25,7 @@ Give it any YouTube URL, and it will:
 -   Audio is downloaded via yt‑dlp
 -   Faster‑Whisper transcribes the audio
 -   Transcript is cleaned using a local LLM correction layer
--   Clean transcript is **summarized & ** indexed into a FAISS vector store **
+-   Clean transcript is **summarized** &  indexed into a **FAISS vector store**
 -   Users ask questions → RAG pipeline retrieves relevant chunks → Mistral LLM answers
 -   Comments are scraped, translated (if needed), and analyzed for **sentiment (RoBERTa)** & **intent/emotion (DistilBERT)**
 -   Results are visualized via Streamlit analytics dashboard
