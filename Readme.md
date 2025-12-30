@@ -1,26 +1,26 @@
-# 🎥 Intellitube 
+# Intellitube 
 
 IntelliTube is a full‑stack, privacy‑first AI system that converts YouTube videos into actionable knowledge. It combines speech‑to‑text, transcript correction, summarization, retrieval‑augmented question answering (RAG), and large‑scale comment sentiment & intent analytics with both Gradio and Streamlit dashboards.
 
 The entire AI pipeline runs locally using open‑source models (**Faster‑Whisper**, **Mistral**, **HuggingFace Transformers**), making IntelliTube suitable for research, education, and enterprise use cases where data privacy matters.
 
 
-## ✨ Features
+##  Features
 
--   🎙️ High‑speed YouTube transcription using Faster‑Whisper
--   ✍️ AI‑based transcript correction for grammar & readability
--   📝 Automatic long‑video summarization using local LLMs
--   ❓ Ask questions over videos (RAG‑based QA)
--   💬 Scrape YouTube comments at scale
--   😊 Deep sentiment analysis (Positive / Neutral / Negative)
--   🎯 Intent & emotion classification (Praise, Complaint, Concern, etc.)
--   📊 Advanced interactive analytics dashboard (Streamlit + Plotly)
--   📄 Export results as JSON / PDF / CSV
--   🔐 User authentication system (Flask + MongoDB)
+-    High‑speed YouTube transcription using Faster‑Whisper
+-    AI‑based transcript correction for grammar & readability
+-    Automatic long‑video summarization using local LLMs
+-    Ask questions over videos (RAG‑based QA)
+-    Scrape YouTube comments at scale
+-    Deep sentiment analysis (Positive / Neutral / Negative)
+-    Intent & emotion classification (Praise, Complaint, Concern, etc.)
+-    Advanced interactive analytics dashboard (Streamlit + Plotly)
+-    Export results as JSON / PDF / CSV
+-    User authentication system (Flask + MongoDB)
 
 ---
 
-## 🧠 System Architecture (Pipeline Overview)
+##  System Architecture (Pipeline Overview)
 -   User submits a YouTube URL
 -   Audio is downloaded via yt‑dlp
 -   Faster‑Whisper transcribes the audio
@@ -32,14 +32,14 @@ The entire AI pipeline runs locally using open‑source models (**Faster‑Whisp
     
 ---
 ---
-## 🧠 System Design Architecture
+##  System Design Architecture
 
 The following diagram illustrates the end-to-end architecture of **IntelliTube**, showing how user requests flow through transcription, LLM processing, analytics, and visualization layers.
 
 ![IntelliTube System Design](static/images/Intellitube-System_Diagram.png)
 
 ---
-## 🔐 Authentication Module
+##  Authentication Module
 
 IntelliTube includes a secure authentication system built using **Flask and MongoDB**, allowing users to sign up and log in before accessing analysis features.
 
@@ -47,7 +47,7 @@ IntelliTube includes a secure authentication system built using **Flask and Mong
 
 ---
 
-## 🎛️ Main Application
+##  Main Application
 
 The main Application Intellitube running on **Gradio Interface** 
 
@@ -56,7 +56,7 @@ The main Application Intellitube running on **Gradio Interface**
 ---
 
 
-## 📁 Project structure
+##  Project structure
 
 ```bash
 
@@ -88,7 +88,7 @@ Intellitube/
 ```
 ---
 
-## 🌐 Web Interface (Frontend)
+##  Web Interface (Frontend)
 
 Beyond the powerful backend, IntelliTube now boasts a custom-built, responsive, and visually appealing frontend for a seamless user experience it is built using Flask, a lightweight and powerful web framework for Python. Key features include:
 
@@ -99,7 +99,7 @@ Beyond the powerful backend, IntelliTube now boasts a custom-built, responsive, 
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Clone the Main Repo
 ```bash
